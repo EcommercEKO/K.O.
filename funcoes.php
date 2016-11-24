@@ -1,5 +1,5 @@
 <?php
-				
+	require_once('conexao.php');			
 	define('DATE', date('d/m/Y'));
 
 	$link = array

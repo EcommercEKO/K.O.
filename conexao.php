@@ -12,7 +12,7 @@ $mysqli = new mysqli($servidor, $usuario, $senha, $banco);
 // Caso algo tenha dado errado, exibe uma mensagem de erro
 
 ?>
-<?php
+<?php/*
 $sql = "SELECT * FROM produto ";
 // Executa a consulta OU mostra uma mensagem de erro
 $resultado = $mysqli -> query($sql);
@@ -32,6 +32,6 @@ $dadosIMAGEN = $resultadoIMAGEN->fetch_array(MYSQLI_ASSOC);
   // Exibe a notícia dentro de um bloco HTML
 	echo "<h2><img src='$dadosIMAGEN[URL]'><BR>";
 
-
+*/
 ?>
 
