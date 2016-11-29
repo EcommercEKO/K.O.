@@ -9,6 +9,7 @@
 	
 // }
 require_once('funcoes.php');
+require_once('conexao.php');
 
 ?>
 <!DOCTYPE html>

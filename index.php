@@ -1,5 +1,6 @@
 <?php 
 require_once('funcoes.php');
+require_once('conexao.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -64,12 +65,12 @@ require_once('funcoes.php');
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://statick1.bseller.com.br/product/30117/150859_1.jpg" alt="">
+                            <img src="<?php echo imagem(3)?>" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">R$ 99,99</h4>
                                 <h4><a href="produtos.php">Metal Earth Bird of Prey (StarTrek)</a>
                                 </h4>
-                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                                <p> <a target="_blank" href="#"><?php echo descri(3)?></a>.</p>
                             </div>
                             <div class="ratings">
                                 <p class="pull-right">15 visualizações</p>
@@ -81,12 +82,12 @@ require_once('funcoes.php');
                                     <span class="glyphicon glyphicon-star"></span>
                                 </p>
                             </div>
-                        </div>
+                        </div>l
                     </div>
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://statick1.bseller.com.br/product/61234/305196_CAMISETA_PRETA_400X520-%25282%2529.png" alt="">
+                            <img src="<?php echo imagem(4)?>" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">R$20,00</h4>
                                 <h4><a href="#">Camiseta Be Like a Panda NEW </a>
@@ -108,7 +109,7 @@ require_once('funcoes.php');
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://statick1.bseller.com.br/product/64097/306114_CAMISETA_CINZA_MESCLA_400X520.png" alt="">
+                            <img src="<?php echo imagem(5)?>" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">R$25.99</h4>
                                 <h4><a href="#">Camiseta The Kingdom</a>
@@ -130,7 +131,7 @@ require_once('funcoes.php');
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://statick1.bseller.com.br/product/30112/150929_1.jpg" alt="">
+                            <img src="<?php echo imagem(1)?>">
                             <div class="caption">
                                 <h4 class="pull-right">R$91,99</h4>
                                 <h4><a href="#">Metal Earth Klingon Vorcha (StarTrek)</a>
@@ -152,7 +153,7 @@ require_once('funcoes.php');
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://statick1.bseller.com.br/product/62930/305073_CAMISETA_BRANCA_2_1000X1000.png" alt="">
+                            <img src="<?php echo imagem(2)?>" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">R$ 65.99</h4>
                                 <h4><a href="#">Camiseta Go steal them all</a>
