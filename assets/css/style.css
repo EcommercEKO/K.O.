@@ -9,11 +9,39 @@ body {
     padding: 0px;
     margin: 0px;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url(//s3.amazonaws.com/img.iluria.com/user_layout_theme/25904/background.jpg?v=0.76884);
+    background-image: url(//s3.amazonaws.com/img.iluria.com/user_layout_theme/25904/background.jpg?v=0.76884) !important;
     background-attachment: fixed;
     background-position: center top;
     background-repeat: repeat;
     background-size: auto;
+}
+
+
+.pull-right1 {
+    float: none !important;
+}
+
+.caption1 {
+    height: 130px;
+    margin-bottom: -50px;
+    overflow: hidden;
+}
+
+.row1{
+  margin-left: 80px;
+  margin-right: -50px; 
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    margin-top: 200px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-left: 130px;
+}
+
+#camisas{
+  font-weight: bold;
+  color: #fff;
 }
 
 .slide-image{
@@ -25,9 +53,10 @@ body {
 }
 
 .navbar-inverse {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.7);
     border-color: #080808;
-}
+    z-index: 1;
+  }
 .navbar-inverse .navbar-nav>li>a {
     color: #9d9d9d;
     margin-top: -30px;
@@ -36,6 +65,11 @@ body {
 .lead{
  color: #fff;
 
+}
+
+.ko-login img{
+  width: 500px;
+  height: 300px;
 }
 
 #dev{
@@ -216,7 +250,7 @@ color: #fff;
   z-index: -1;
 }
  
-.user img{
+.user img {
   
   height: 50px;
   width: 50px;
@@ -226,12 +260,14 @@ color: #fff;
 
   opacity: 0.5;
 transition: opacity 1s;
+
 }
 
 .user img:hover {
 opacity: 1.0; 
 -moz-opacity: 1.0;
 border: 3px solid #dbdbdb; 
+
 
 
 }
@@ -344,6 +380,8 @@ h3 {
 
 .inner-bg {
     padding: 100px 0 170px 0;
+    margin-top: -180px;
+
 }
 
 .top-content .text {
@@ -366,6 +404,9 @@ h3 {
 
 .form-box {
 	margin-top: 35px;
+}
+.form-box1 {
+    margin-top: -250px;
 }
 
 .form-top {
