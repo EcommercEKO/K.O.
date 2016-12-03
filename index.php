@@ -65,15 +65,15 @@ require_once('conexao.php');
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="<?php echo imagem(3)?>" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">R$ 99,99</h4>
+                             <img src="<?php echo imagem(3)?>" alt="">
+                            <div class="caption1">
+                                <h4 class="pull-right1">R$ 99,99</h4>
                                 <h4><a href="produtos.php">Metal Earth Bird of Prey (StarTrek)</a>
                                 </h4>
-                                <p> <a target="_blank" href="#"><?php echo descri(3)?></a>.</p>
+                                
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">15 visualizações</p>
+                                <p class="pull-right1">15 visualizações</p>
                                 <p>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
@@ -82,20 +82,19 @@ require_once('conexao.php');
                                     <span class="glyphicon glyphicon-star"></span>
                                 </p>
                             </div>
-                        </div>l
+                        </div>
                     </div>
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="<?php echo imagem(4)?>" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">R$20,00</h4>
+                           <img src="<?php echo imagem(4)?>" alt="">
+                            <div class="caption1">
+                                <h4 class="pull-right1">R$20,00</h4>
                                 <h4><a href="#">Camiseta Be Like a Panda NEW </a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">12 visualizações</p>
+                                <p class="pull-right1">12 visualizações</p>
                                 <p>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
@@ -109,15 +108,15 @@ require_once('conexao.php');
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="<?php echo imagem(5)?>" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">R$25.99</h4>
+                          <img src="<?php echo imagem(5)?>" alt="">
+                            <div class="caption1">
+                                <h4 class="pull-right1">R$25.99</h4>
                                 <h4><a href="#">Camiseta The Kingdom</a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">31 visualizações</p>
+                                <p class="pull-right1">31 visualizações</p>
                                 <p>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
@@ -131,15 +130,15 @@ require_once('conexao.php');
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="<?php echo imagem(1)?>">
-                            <div class="caption">
-                                <h4 class="pull-right">R$91,99</h4>
+                           <img src="<?php echo imagem(5)?>" alt="">
+                            <div class="caption1">
+                                <h4 class="pull-right1">R$91,99</h4>
                                 <h4><a href="#">Metal Earth Klingon Vorcha (StarTrek)</a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">6 visualizações</p>
+                                <p class="pull-right1">6 visualizações</p>
                                 <p>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
@@ -153,15 +152,15 @@ require_once('conexao.php');
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="<?php echo imagem(2)?>" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">R$ 65.99</h4>
+                            <img src="http://statick1.bseller.com.br/product/62930/305073_CAMISETA_BRANCA_2_1000X1000.png" alt="">
+                            <div class="caption1">
+                                <h4 class="pull-right1">R$ 65.99</h4>
                                 <h4><a href="#">Camiseta Go steal them all</a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">1800 visualizações</p>
+                                <p class="pull-right1">1800 visualizações</p>
                                 <p>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>

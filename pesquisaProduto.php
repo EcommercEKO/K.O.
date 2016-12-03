@@ -14,9 +14,9 @@ require_once('conexao.php');
             <form action="#">
                      <div class="col-ms-4">
                      
-                        Nome:  <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="nome_p">
+                         <p id="pcontato">Nome:</p>  <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="nome_p">
                         <br />
-                        Preço:  <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="preco_produto" >
+                         <p id="pcontato">Preço:</p>  <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="preco_produto" >
                         <br />
                        
                         <input type="submit" class="btn btn-default" name="Enviar">

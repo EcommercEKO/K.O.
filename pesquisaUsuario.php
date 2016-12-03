@@ -14,11 +14,11 @@ require_once('conexao.php');
             <form action="#">
                      <div class="col-ms-4">
                      
-                        Nome:  <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="nome_p">
+                        <p id="pcontato">Nome:</p>  <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="nome_p">
                         <br />
-                        CPF: <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"name="cpf_p" maxlength="11">
+                        <p id="pcontato">CPF:</p> <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"name="cpf_p" maxlength="11">
                          <br />
-                        Data de Nascimento: <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="data_p" maxlength="10">
+                        <p id="pcontato">Data de Nascimento:</p> <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="data_p" maxlength="10">
                         <br />
                        
                         <input type="submit" class="btn btn-default" name="Enviar">

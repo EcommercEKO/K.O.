@@ -21,7 +21,7 @@ echo criaMenu();
         <p id="pcontato">Telefone: </p>
         <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="telefone_contato" maxlength="9">
         <br />
-        Assunto: 
+        <p id="pcontato">Assunto: </p> 
     <select class="form-control"name="assunto_contato">
         <option value="Reclamações">Reclamações</option>        
         <option value="Dúvidas">Dúvidas</option>        

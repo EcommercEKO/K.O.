@@ -13,26 +13,32 @@ require_once('conexao.php');
         <h1>Cadastro de Usuário</h1>
             <form action="cadastra_usuario.php" method="POST">
                      <div class="col-ms-4">
-                       Nome: <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="nome">
+                       <p id="pcontato">Nome:</p> <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="nome">
                        <br />
                        
-                        Idade: <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="idade" maxlength="3">
+                        <p id="pcontato">Idade:</p> <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="idade" maxlength="3">
                         
                         <br />
 
-                        CPF: <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="cpf" maxlength="11">
+                        <p id="pcontato">CPF:</p> <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="cpf" maxlength="11">
                         <br />
 
-                        RG:<input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="rg" maxlength="9">
+                        <p id="pcontato">RG:</p><input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="rg" maxlength="9">
                         <br />
                         
-                        Data de Nascimento: <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"name="data" maxlength="10">
+                        <p id="pcontato">Data de Nascimento:</p> <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"name="data" maxlength="10">
                         <br />
-                        Feminino: <input type="radio" name="sexo" value="Feminino">
-                        Masculino: <input type="radio" name="sexo" value="Masculino">
+                        <div class="sexo">
+                        <table>
+                        <tr >
+                        <td><p >Feminino <input type="radio" name="sexo" value="Feminino"> </p></td>
+                        <td><p>&nbsp;Masculino <input type="radio" name="sexo" value="Masculino"></p></td>
+                        </tr>
+                        </table>
+                        </div>
                         <br />
                         <br>
-                        Estado Civil: <select class="form-control" type="text" name="estado_civil">
+                        <p id="pcontato">Estado Civil:</p> <select class="form-control" type="text" name="estado_civil">
                             <option value= "solteiro"> 
                                 Solteiro
                             </option>
@@ -51,29 +57,29 @@ require_once('conexao.php');
                             
                         </select>
                         <br />
-                        CEP: <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="cep" maxlength="8">
+                        <p id="pcontato">CEP:</p> <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="cep" maxlength="8">
                         <br />
-                        Endereço: <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="endereco">
+                        <p id="pcontato">Endereço:</p> <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="endereco">
                         <br />
-                        Numero: <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="numero">
+                        <p id="pcontato">Numero:</p> <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="numero">
                         <br />
-                        Complemento: <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="complemento">
+                        <p id="pcontato">Complemento:</p> <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="complemento">
                         <br />
-                        Estado: <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"name="estado">
+                        <p id="pcontato">Estado:</p> <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"name="estado">
                         <br />
-                        Cidade: <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="cidade">
+                        <p id="pcontato">Cidade:</p> <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="cidade">
                         <br />
-                        Bairro: <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="bairro">
+                        <p id="pcontato">Bairro:</p> <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="bairro">
                         <br />
-                        Tel.Residencial:<input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="residencial">
+                        <p id="pcontato">Tel.Residencial:</p><input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="residencial">
                         <br />
-                        Tel.Celular:<input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"name="celular">
+                        <p id="pcontato">Tel.Celular:</p><input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"name="celular">
                         <br />
-                        E-mail:<input type="email" class="form-control" id="inputEmail3"name="email">
+                        <p id="pcontato">E-mail:</p><input type="email" class="form-control" id="inputEmail3"name="email">
                         <br />
-                        Senha:<input type="password" class="form-control" id="inputPassword2" name="senha">
+                        <p id="pcontato">Senha:</p><input type="password" class="form-control" id="inputPassword2" name="senha">
                         <br />
-                        Não sou robo: <input type="checkbox" name="robozinho">
+                        <p id="pcontato">Não sou robo:</p> <input type="checkbox" name="robozinho">
                         <input type="submit" class="btn btn-default" name="Enviar">
             </form>         
         </div>

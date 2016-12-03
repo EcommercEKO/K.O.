@@ -24,15 +24,15 @@ require_once('conexao.php');
         <hr>
 
         <!-- Title -->
-        <div class="row">
+        <div class="row1">
             <div class="col-lg-12">
-                <h3>Latest Features</h3>
+                <h3 id="camisas">Camisetas</h3>
             </div>
         </div>
         <!-- /.row -->
 
         <!-- Page Features -->
-        <div class="row text-center">
+        <div class="row1 text-center">
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
@@ -40,9 +40,7 @@ require_once('conexao.php');
                     <div class="caption">
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                        
                     </div>
                 </div>
             </div>
@@ -53,9 +51,7 @@ require_once('conexao.php');
                     <div class="caption">
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                        
                     </div>
                 </div>
             </div>
@@ -66,9 +62,7 @@ require_once('conexao.php');
                     <div class="caption">
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                        
                     </div>
                 </div>
             </div>
@@ -79,12 +73,65 @@ require_once('conexao.php');
                     <div class="caption">
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                        
                     </div>
                 </div>
             </div>
+
+
+
+             <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
 
         </div>
         <!-- /.row -->
