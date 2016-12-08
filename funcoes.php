@@ -112,6 +112,9 @@
 					 <li>
                         <a href="sobre.php">Sobre</a>
                     </li>
+                    <li>
+                        <a href="logout.php" style = "color:red;">sair</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -167,6 +170,7 @@
                      <li>
                         <a href="sobre.php">Sobre</a>
                     </li>
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

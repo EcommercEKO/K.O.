@@ -4,12 +4,20 @@ require_once('conexao.php');
   $entrar = $_POST['entrar'];
   $senha = $_POST['senha'];
   $user = user($login);
+  $pass = senha($login);
 
-          if ($user = $login){
-          echo"<script language='javascript' type='text/javascript'>alert('Login e/ou senha incorretos');window.location.href='login.php';</script>";
-          die();
-        }else{
-          setcookie("login",$login);
-          header("Location:index.php");
-}
-?>
+ //echo $login;
+ //echo user();
+
+ if ($login == $user || $senha == $pass) {
+ 	session_start();
+	$_SESSION['name'] = $user;
+   	header('Localização: index.php');
+ 	echo "<script language='javascript' type='text/javascript'>alert('BEM VINDO $user ');window.location.href='index.php';</script>";
+ }
+ else{
+ 	echo "<script language='javascript' type='text/javascript'>alert('Senha ou usuário errados');window.location.href='index.php';</script>";
+
+
+ }
+ ?>

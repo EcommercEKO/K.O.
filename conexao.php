@@ -71,18 +71,33 @@ function nomecliente($id){
 	return "$dados[NOME]";
 }
 function user($user){
+	
 	$mysqli= conexao();
 	$sql = "SELECT login FROM cliente WHERE login like '$user'";
 	// Executa a consulta OU mostra uma mensagem de erro
 	$resultado = $mysqli -> query($sql);
 	// Faz um loop, passando por todos os resultados encontrados
 	$dados = $resultado->fetch_array(MYSQLI_ASSOC);
-	  // Exibe a notícia dentro de um bloco HTML
-	return "$dados[NOME]";
+	  // Exibe a notícia dentro de um bloco HTML;
+	return "$dados[login] ";
 }
+function senha($user){
+	
+	$mysqli= conexao();
+	$sql = "SELECT senha FROM cliente WHERE login like '$user'";
+	// Executa a consulta OU mostra uma mensagem de erro
+	$resultado = $mysqli -> query($sql);
+	// Faz um loop, passando por todos os resultados encontrados
+	$dados = $resultado->fetch_array(MYSQLI_ASSOC);
+	  // Exibe a notícia dentro de um bloco HTML;
+	return "$dados[senha]";
+}
+<<<<<<< HEAD
+=======
 
 
 
 
+>>>>>>> 21ff125e080dcf5b911b9300b4ae0603d5a89787
 ?>
 

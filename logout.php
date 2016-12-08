@@ -1,7 +1,9 @@
 <?php 
-session_destroy();
-unset($_SESSION['nome']);
-unset($_SESSION['login']);
-unset($_SESSION['senha']);
-header(location: 'index.php');
+
+if(isset($_SESSION));{
+
+
+	@session_destroy();};
+
+echo "<script language='javascript' type='text/javascript'>window.location.href='index.php';</script>";
 ?>
