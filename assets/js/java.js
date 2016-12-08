@@ -10,3 +10,4 @@ setTimeout(function() {
 setTimeout(function() {
     $('#close').click();
 }, 1500);
+
