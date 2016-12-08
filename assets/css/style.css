@@ -16,9 +16,26 @@ body {
     background-size: auto;
 }
 
+.content5 {
+    margin-top: 100px;
+    background: rgba(8, 8, 8, 0.61);
+    width: 600px;
+    margin-left: 350px;
+}
+#pcadastroUser{
+
+    margin-bottom: -100px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 150px;
+
+}
 
 .pull-right1 {
     float: none !important;
+
+    color: #000;
+
 }
 
 .caption1 {
@@ -126,6 +143,7 @@ color: #fff;
     color: #fff;
     margin-bottom: -150px;
     margin-top: 240px;
+    font-weight: bold;
 }
 
 .col-ms-4 {
@@ -376,22 +394,58 @@ select#qtd {
     padding: 4px;
   
     line-height: 1.42857143;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.73);
+    border: 1px solid : rgba(255, 255, 255, 0.73);
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+ 
+.thumbnail3 {
+    margin-right: 80px;
+    margin-bottom: 30px;
+    display: block;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: rgba(199, 199, 218, 0.51);
+    border: 1px solid rgba(199, 199, 218, 0.51);
     border-radius: 4px;
     -webkit-transition: border .2s ease-in-out;
     -o-transition: border .2s ease-in-out;
     transition: border .2s ease-in-out;
 }
 
+.pull-right2 {
+    float: none !important;
+    color: white;
+}
+
+
+
 header.jumbotron.hero-spacer {
     background: rgba(16, 16, 16, 0.79);
     color: #f3efef;
 }
 
+header.jumbotron.hero-spacer2 {
+    background: rgba(197, 21, 21, 0.69);
+    color: #f3efef;
+}
+
+header.jumbotron.hero-spacer3 {
+    background: rgba(19, 121, 22, 0.56);
+    color: white;
+}
 
 #prod{
   font-size: 14px;
+
+}
+
+#prod3{
+  font-size: 14px;
+  color: white;
 }
 
 .search-icon:after {
@@ -429,6 +483,20 @@ h3 {
     color: #555;
     line-height: 30px;
 }
+
+.thumbnail3 a>img, .thumbnail3>img {
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.thumbnail3 img {
+    width: 50%;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail3 a>img, .thumbnail3>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} 
 
 .thumbnail2 a>img, .thumbnail2>img {
     margin-right: auto;
@@ -472,6 +540,14 @@ h3 {
 	font-size: 20px;
 	line-height: 20px;
 }
+
+#paglink{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: -100px;
+}
+
 
 .btn-link-2 {
 	display: inline-block;
@@ -561,6 +637,10 @@ h3 {
 
 }
 
+#login-cadastro:hover{
+  opacity: 0.3;
+}
+
 
 #valor{
      height: 30px;
@@ -630,7 +710,10 @@ button#valor:hover {
   margin-top: 250px;
 }
 
-
+#footer{
+  color: white;
+  font-weight: bold;
+}
 
 /***** Media queries *****/
 
