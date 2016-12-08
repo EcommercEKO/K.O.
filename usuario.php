@@ -12,9 +12,9 @@ require_once('conexao.php');
     <div class="container">
 
         <br><br><br><br><br><br><br><br>
-         <a href="cadastroUsuario.php"  class="btn btn-primary btn-lg btn-block" role="button">Cadastrar Usuário</a>
+         <a href="cadastroUsuario.php"  class="btn btn-primary btn-lg btn-block1" role="button">Cadastrar Usuário</a>
          <br><br>
-         <a href="pesquisaUsuario.php" class="btn btn-default btn-lg btn-block" role="button">Pesquisar Usuário</a>
+         <a href="pesquisaUsuario.php" class="btn btn-default btn-lg btn-block1" role="button">Pesquisar Usuário</a>
            <br><br><br><br><br><br><br><br>
                 
 

@@ -7,13 +7,7 @@ require_once('conexao.php');
 
    <?php 
         echo iniciaPagina();
-                  if (isset($_SESSION)){
-             echo criaMenu();
-        }
-        else {
-            echo criaMenu2();
-            echo "<p style= 'color :white;'>Olá usuario</p>";
-            }
+        echo criaMenu();
     ?>
 
     <!-- Page Content -->
@@ -21,119 +15,127 @@ require_once('conexao.php');
 
         <!-- Jumbotron Header -->
         <header class="jumbotron hero-spacer">
-            <h1>A Warm Welcome!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-            <p><a class="btn btn-primary btn-large">Call to action!</a>
+            <h1>Bem Vindo!</h1>
+            <p>Aproveite nossas ofertas no setor de caisa!!</p>
+            
             </p>
         </header>
 
         <hr>
 
-        <!-- Title -->
-        <div class="row1">
-            <div class="col-lg-12">
-                <h3 id="camisas">Camisetas</h3>
-            </div>
-        </div>
         <!-- /.row -->
 
         <!-- Page Features -->
         <div class="row1 text-center">
 
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail2">
+                             <img  src="<?php echo imagem(3)?>" alt="">
+                            <form method="post" action="produtos.php">                 
+                            <div class="caption1">
+                                <h4 class="pull-right1">R$<?php echo preco(3)?></h4>
+                                <h4><a href="#"><p id="prod"><?php echo nomeProd(3)?></p></a>
+                                </h4>
+                                 <a href="produtos.php">
+                          <button id="valor" value='3' name='valor' type='submit'/>Ver</button>
+                          </a>
+                        </form>
+                            </div>
+                            <div class="ratings">
+                                <br>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        
+           <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail2">
+                             <img  src="<?php echo imagem(4)?>" alt="">
+                            <form method="post" action="produtos.php">                 
+                            <div class="caption1">
+                                <h4 class="pull-right1">R$ <?php echo preco(4)?></h4>
+                                <h4><a href="#"><p id="prod"><?php echo nomeProd(4)?></p></a>
+                                </h4>
+                                 <a href="produtos.php">
+                          <button id="valor" value='4' name='valor' type='submit'/>Ver</button>
+                          </a>
+                        </form>
+                            </div>
+                            <div class="ratings">
+                                <br>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        
+
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail2">
+                             <img  src="<?php echo imagem(5)?>" alt="">
+                            <form method="post" action="produtos.php">                 
+                            <div class="caption1">
+                                <h4 class="pull-right1">R$<?php echo preco(5)?></h4>
+                                <h4><a href="#"><p id="prod"><?php echo nomeProd(5)?></p></a>
+                                </h4>
+                                 <a href="produtos.php">
+                          <button id="valor" value='5' name='valor' type='submit'/>Ver</button>
+                          </a>
+                        </form>
+                            </div>
+                            <div class="ratings">
+                                <br>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail2">
+                             <img  src="<?php echo imagem(6)?>" alt="">
+                            <form method="post" action="produtos.php">                 
+                            <div class="caption1">
+                                <h4 class="pull-right1">R$ <?php echo preco(6)?></h4>
+                                <h4><a href="#"><p id="prod"><?php echo nomeProd(6)?></p></a>
+                                </h4>
+                                 <a href="produtos.php">
+                          <button id="valor" value='3' name='valor' type='submit'/>Ver</button>
+                          </a>
+                        </form>
+                            </div>
+                            <div class="ratings">
+                                <br>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-
-
-             <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        
-                    </div>
-                </div>
-            </div>
-
-             <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        
-                    </div>
-                </div>
-            </div>
-
-             <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        
-                    </div>
-                </div>
-            </div>
-
-             <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
+            
+        
 
 
 

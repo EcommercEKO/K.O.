@@ -7,13 +7,7 @@ require_once('conexao.php');
 
    <?php 
         echo iniciaPagina();
-                   if (isset($_SESSION)){
-             echo criaMenu();
-        }
-        else {
-            echo criaMenu2();
-            echo "<p style= 'color :white;'>Olá usuario</p>";
-            }
+        echo criaMenu();
     ?>
 
     <!-- Page Content -->

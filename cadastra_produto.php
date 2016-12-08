@@ -11,13 +11,7 @@ require_once('conexao.php');
 
 	echo iniciaPagina();
 	echo criaCabecalho();
-	            if (isset($_SESSION)){
-             echo criaMenu();
-        }
-        else {
-            echo criaMenu2();
-            echo "<p style= 'color :white;'>Olá usuario</p>";
-            }
+	echo criaMenu();
 		?>
 		<!-- <div class="conteudo"> -->
 		<?php

@@ -7,15 +7,7 @@ require_once('conexao.php');
 
    <?php 
         echo iniciaPagina();
-            if (isset($_SESSION)){
-             echo criaMenu();
-        }
-        else {
-            echo criaMenu2();
-            echo "<p style= 'color :white;'>Olá usuario</p>";
-            }
-        
-        echo criaCabecalho();
+        echo criaMenu();
     ?>
 
     <!-- Page Content -->
@@ -30,7 +22,7 @@ require_once('conexao.php');
                     <a href="#" class="list-group-item">Livros</a>
                     <a href="#" class="list-group-item">Acessórios</a>
 					<a href="#" class="list-group-item">Colecionáveis</a>
-					<a href="#" class="list-group-item">Colecionáveis</a>
+					
 					<a href="#" class="list-group-item">Decoração</a>
 					
                 </div>
@@ -73,15 +65,19 @@ require_once('conexao.php');
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                             <img src="<?php echo imagem(3)?>" alt="">
+                             <img  src="<?php echo imagem(3)?>" alt="">
+                            <form method="post" action="produtos.php">                 
                             <div class="caption1">
-                                <h4 class="pull-right1">R$ 99,99</h4>
-                                <h4><a href="produtos.php">Metal Earth Bird of Prey (StarTrek)</a>
+                                <h4 class="pull-right1">R$20.00</h4>
+                                <h4><a href="#">Camiseta Be Like a Panda NEW F</a>
                                 </h4>
-                                
+                                 <a href="produtos.php">
+                          <button id="valor" value='3' name='valor' type='submit'/>Ver</button>
+                          </a>
+                        </form>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right1">15 visualizações</p>
+                                <br>
                                 <p>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
@@ -95,14 +91,19 @@ require_once('conexao.php');
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                           <img src="<?php echo imagem(4)?>" alt="">
+                        <img  src="<?php echo imagem(4)?>"  alt="" >
+                            <form method="post" action="produtos.php">                 
                             <div class="caption1">
-                                <h4 class="pull-right1">R$20,00</h4>
+                                <h4 class="pull-right1">R$20.00</h4>
                                 <h4><a href="#">Camiseta Be Like a Panda NEW </a>
                                 </h4>
+                                 <a href="produtos.php">
+                          <button id="valor" value='4' name='valor' type='submit'/>Ver</button>
+                          </a>
+                        </form>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right1">12 visualizações</p>
+                                <br>
                                 <p>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
@@ -113,18 +114,22 @@ require_once('conexao.php');
                             </div>
                         </div>
                     </div>
-
+                
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                          <img src="<?php echo imagem(5)?>" alt="">
+                        <img src="<?php echo imagem(5)?>" alt="">
+                        <form method="post" action="produtos.php">                 
                             <div class="caption1">
                                 <h4 class="pull-right1">R$25.99</h4>
                                 <h4><a href="#">Camiseta The Kingdom</a>
                                 </h4>
-                                
+                                 <a href="produtos.php">
+                          <button id="valor" value='5' name='valor' type='submit'/>Ver</button>
+                          </a>
+                      </form>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right1">31 visualizações</p>
+                                <br>
                                 <p>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
@@ -138,15 +143,19 @@ require_once('conexao.php');
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                           <img src="<?php echo imagem(5)?>" alt="">
+                           <img src="<?php echo imagem(1)?>" alt="">
+                           <form method="post" action="produtos.php">                 
                             <div class="caption1">
-                                <h4 class="pull-right1">R$<?php echo preco(5)?></h4>
-                                <h4><a href="#"><?php echo nome(5)?></a>
+                                <h4 class="pull-right1">R$89.99</h4>
+                                <h4><a href="#">Metal Earth Klingon Vorcha</a>
                                 </h4>
-                                
+                                 <a href="produtos.php">
+                          <button id="valor" value='1' name='valor' type='submit'/>Ver</button>
+                          </a>
+                      </form>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right1">6 visualizações</p>
+                                <br>
                                 <p>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
@@ -160,15 +169,19 @@ require_once('conexao.php');
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://statick1.bseller.com.br/product/62930/305073_CAMISETA_BRANCA_2_1000X1000.png" alt="">
+                            <img src="<?php echo imagem(6)?>" alt="">
+                            <form method="post" action="produtos.php"> 
                             <div class="caption1">
-                                <h4 class="pull-right1">R$ 65.99</h4>
-                                <h4><a href="#">Camiseta Go steal them all</a>
+                                <h4 class="pull-right1">R$34.99</h4>
+                                <h4><a href="#">Camiseta Give me Rupees</a>
                                 </h4>
-                                
+                               <a href="produtos.php">
+                          <button id="valor" value='6' name='valor' type='submit'/>Ver</button>
+                          </a>
+                      </form>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right1">1800 visualizações</p>
+                                <br>
                                 <p>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
@@ -179,12 +192,30 @@ require_once('conexao.php');
                             </div>
                         </div>
                     </div>
-
+                  
+                     
+            
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <h4><a href="#">Gostou do que viu?</a>
                         </h4>
-                        <p>If you like this template, then check out <a target="_blank" href="">this tutorial</a> on how to build a working review system for your online store!</p>
-                        <a class="btn btn-primary" target="_blank" href="">Veja mais</a>
+                        <p style="color: #fff;">Visite o site de nosso maior fornecedor!!</p>
+                        <a class="btn btn-primary" onclick="link()" target="_blank" href="">Veja mais</a>
+                           <script>
+                            function link()
+                            {
+                            var x;
+                            var r=confirm("Link externo, deseja ir?");
+
+                            if (r==true)
+                              {
+                              window.location.href = "http://www.nerduniverse.com.br/"
+                              }
+                            else
+                              {
+                             window.location.href = "#";
+                              }
+                            }
+                        </script>
                     </div>
 
                 </div>

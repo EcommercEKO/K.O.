@@ -1,23 +1,13 @@
 <?php 
 require_once('funcoes.php');
 require_once('conexao.php');
-if (!isset($_SESSION)) {
-    echo"<script language='javascript' type='text/javascript'>alert('acesso Negado');window.location.href='index.php';</script>";
-
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
    <?php 
         echo iniciaPagina();
-      if (isset($_SESSION)){
-             echo criaMenu();
-        }
-        else {
-            echo criaMenu2();
-            echo "<p style="color :white;">Olá usuario</p>";
-            }
+        echo criaMenu();
     ?>
 
     <!-- Top content -->
@@ -47,20 +37,19 @@ if (!isset($_SESSION)) {
                         		</div>
                             </div>
                             <div class="form-bottom">
-			                    <form role="form" action="login2.php" method="post" class="login-form">
+			                    <form role="form" action="" method="post" class="login-form">
 			                    	<div class="form-group">
-			                    		<label class="sr-only" for="form-username" >Nome de Usuário</label>
-			                        	<input type="text"  placeholder="Username..." name="login" id="login" class="form-username form-control" >
+			                    		<label class="sr-only" for="form-username">Nome de Usuário</label>
+			                        	<input type="text" name="nome" placeholder="Nome de Usuário" class="form-username form-control" id="form-username">
 			                        </div>
 			                        <div class="form-group">
-			                        	<label class="sr-only" for="form-password" >Senha</label>
-			                        	<input type="password"  placeholder="Password..." class="form-password form-control" name="senha" id="senha">
+			                        	<label class="sr-only" for="form-password">Senha</label>
+			                        	<input type="password" name="nome" placeholder="Senha" class="form-password form-control" id="form-password">
 			                        </div>
-			                        <button type="submit" class="btn" name="entrar" id="entrar">Entrar!</button>
+			                        <button type="submit" class="btn">Entrar!</button>
 			                    </form>
 		                    </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -68,7 +57,11 @@ if (!isset($_SESSION)) {
         </div>
 
 
+
+
+
  	<?php
        echo finalizapagina();
-?>
+    ?>
+
 </html>

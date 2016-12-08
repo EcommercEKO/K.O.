@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -47,6 +48,11 @@ body {
   border:  10px solid #fff;
 }
 
+.img1 {
+    vertical-align: middle;
+    border: 0;
+}
+
 .row{
   margin-top: 160px;
 }
@@ -71,6 +77,8 @@ body {
   height: 300px;
 }
 
+
+
 #dev{
   color: #fff;
   font-weight: bold;
@@ -81,8 +89,9 @@ color: #fff;
     margin-top: 200px;
     text-align: justify;
     margin-left: 100px;
-    background-color: rgba(255, 255, 255, 0.21);
+    background-color: rgba(12, 12, 12, 0.67);
     padding: 15px;
+    font-size: 17px;
 }
 
 .table {
@@ -140,7 +149,14 @@ color: #fff;
 
 }
 
-#pcontato  {
+.validacao  {
+    margin: 0 0 5px;
+    float: left ;
+    font-weight: bold ;
+    color: #de615e;
+  }
+
+.pcontato  {
     margin: 0 0 5px;
     float: left ;
     font-weight: bold ;
@@ -156,8 +172,14 @@ color: #fff;
 .col-md-9 {
     width: 75%;
     margin-top: -10%;
+    
 }
 
+.col-md-91 {
+    width: 75%;
+    margin-top: -10%;
+    margin-left: 265px;
+}
 .navbar-inverse-1 {
     background-color: #000;
         border-color: red;
@@ -300,6 +322,78 @@ border: 3px solid #dbdbdb;
 
 }
 
+.thumbnail1 {
+    margin-right: 70px;
+    margin-top: 280px;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+#tcar{
+ color: #fff;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-bottom: -90px;
+    margin-left: 100px;
+
+}
+
+select#qtd {
+    width: 70px;
+    margin-left: 360px;
+}
+
+.ccar{
+  padding: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+.carrinho {
+    width: 800px;
+    height: 500px;
+    background: rgba(10, 10, 10, 0.61);
+    margin-left: 270px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(10, 10, 10, 0.61);
+    border-radius: 5px;
+}
+
+.thumbnail2{
+    margin-right: 80px;
+    margin-bottom: 30px;
+    display: block;
+    padding: 4px;
+  
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+header.jumbotron.hero-spacer {
+    background: rgba(16, 16, 16, 0.79);
+    color: #f3efef;
+}
+
+
+#prod{
+  font-size: 14px;
+}
+
 .search-icon:after {
   content: '';
   position: absolute;
@@ -336,7 +430,19 @@ h3 {
     line-height: 30px;
 }
 
-
+.thumbnail2 a>img, .thumbnail2>img {
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.thumbnail2 img {
+    width: 50%;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail2 a>img, .thumbnail2>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 ::-moz-selection { background: #de615e; color: #fff; text-shadow: none; }
 ::selection { background: #de615e; color: #fff; text-shadow: none; }
@@ -452,6 +558,46 @@ h3 {
 	background: rgba(0, 0, 0, 0.50);
 	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
 	text-align: left;
+
+}
+
+
+#valor{
+     height: 30px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #de615e;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+
+}
+
+button#valor:hover {
+    opacity: 0.6;
+    color: #fff;
+}
+
+.btn-block1 {
+    display: block;
+    width: 600px;
+    margin-left: 300px;
 }
 
 .form-bottom form textarea {
@@ -462,8 +608,10 @@ h3 {
 	width: 100%;
 }
 
-.form-bottom form .input-error {
+
+.form-bottom, .form-b , form .input-error  {
 	border-color: #de615e;
+  
 }
 
 .social-login {
@@ -481,6 +629,8 @@ h3 {
 .links{
   margin-top: 250px;
 }
+
+
 
 /***** Media queries *****/
 

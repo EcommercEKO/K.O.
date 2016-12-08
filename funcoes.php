@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="assets/css/form-elements.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+
     <!--- Custom JavaScript -->
      <link rel="script" href="http://milanmilosev.com/external/codepen/js/copyright.js">
     <link rel="script" href="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
@@ -37,6 +38,7 @@
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        
 
     <![endif]-->
 
@@ -48,7 +50,7 @@
 
 	function criaCabecalho () {
 		return '
-		<div style="color:white; margin-left:90%; z-index:9999;"><!--REGIAO 1-->
+		<div class="header"><!--REGIAO 1-->
 		'.DATE	
 		.'</div>';
 	}
@@ -70,9 +72,12 @@
 
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                <li><a href="usuario.html"></a></li> 
+
+                    <li>
+                        <a href="usuario.html"></a>
+                    </li>
                   <div class="search-bar">
-                        <input type="text"  required></input>
+                        <input type="text" required></input>
                         <div class="search-icon"></div>
                   </div>
 
@@ -117,68 +122,6 @@
         <!-- /.container -->
     </nav>';
 	}
-function criaMenu2 () {
-        return 
-        '<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-            </div>
-
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                  <div class="search-bar">
-                        <input type="text"  required></input>
-                        <div class="search-icon"></div>
-                  </div>
-
-                  <div>
-                      <div class="user">
-                         <a href="login.php"><img src="assets\ico\8.png"</a>
-                      </div>
-                       <div class="car">
-                          <img src="assets\ico\car.png">
-                      </div>
-                       <div class="ko"> 
-                       <a href="index.php"><img src="assets\ico\ko-LOGO.png"></a></div>
-                   </div>
-                </ul>
-            </div>
-           
-
-
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-
-                    <li>
-                        <a href="produto.php">Produto</a>
-                    </li>
-                    <li>
-                        <a href="contato.php">Contato</a>
-                    </li>
-                     <li>
-                        <a href="links.php">Links de Interesse</a>
-                    </li>
-                     <li>
-                        <a href="sobre.php">Sobre</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>';
-    }
-
 
 	function finalizaPagina () {
 		return
@@ -186,7 +129,7 @@ function criaMenu2 () {
 
         <hr>
          <footer>
-            <div class="row">
+            <div class="row2">
                 <div class="col-lg-12">
                     <p>Copyright &copy; Your Website 2014</p>
                 </div>
@@ -208,12 +151,11 @@ function criaMenu2 () {
         <script src="assets/js/scripts.js"></script>
         <script src="assets/js/java.js"></script>
         <script src="js/jquery.js"></script>
+         <script src="js/script.js"></script>
         
+
 
 </body>';
 	}
-
-   
-
 
 ?>

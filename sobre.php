@@ -7,13 +7,7 @@ require_once('conexao.php');
 
    <?php 
         echo iniciaPagina();
-                  if (isset($_SESSION)){
-             echo criaMenu();
-        }
-        else {
-            echo criaMenu2();
-            echo "<p style= 'color :white;'>Olá usuario</p>";
-            }
+        echo criaMenu();
     ?>
 
     <!-- Page Content -->
@@ -21,7 +15,7 @@ require_once('conexao.php');
 
         <h2 id="titulo-sobre">SOBRE A KNOCKOUT</h2>
 
-	     <p id="textoinfo">A <i>Knockout(K.O)</i> é um E-Comerce inovador,que surgiu de um trabalho de graduação, onde quatro desenvolvedores se juntaram com uma proposta, nunca vista antes em outro E-Commerce,com  um layout inovador, com um design funcional inspirado nos quadrinhos, alem disso a K.O possui o melhor sistema de segurança para proteção do seus dados e de suas compras. Trabalhamos  duro para conseguir trazer o que há de melhor no mercado para vocês,aproveitem o que  universo K.O tem a te oferecer</p><br>
+	     <p  id="textoinfo" >A <i>Knockout(K.O)</i> é um E-Comerce inovador,que surgiu de um trabalho de graduação, onde quatro desenvolvedores se juntaram com uma proposta, nunca vista antes em outro E-Commerce,com  um layout inovador, com um design funcional inspirado nos quadrinhos, alem disso a K.O possui o melhor sistema de segurança para proteção do seus dados e de suas compras. Trabalhamos  duro para conseguir trazer o que há de melhor no mercado para vocês,aproveitem o que  universo K.O tem a te oferecer</p><br>
    
 	<!--texto informativo sobre o sistema utilizar diferentes tipos de h-->
 	<table class="table table-striped">

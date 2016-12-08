@@ -7,24 +7,18 @@ require_once('conexao.php');
 
 <?php 
 echo iniciaPagina();
-            if (isset($_SESSION)){
-             echo criaMenu();
-        }
-        else {
-            echo criaMenu2();
-            echo "<p style= 'color :white;'>Olá usuario</p>";
-            }
+echo criaMenu();
 ?>
 <div class="container">
     <h3 id="titulo">Contato</h3>
-    <form action="envia_contato.php" method="post" id = "formContato" enctype="multipart/form-data">
+    <form action="envia_contato.php" method="post" id = "campo" enctype="multipart/form-data">
        <div class="col-ms-4">
 
-        <p id="pcontato">Nome:</p><input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="nome_contato">
+        <p class="pcontato">Nome:</p><input class="form-control" type="text" name="texto" id="uppCase" onkeyup="alteraMaiusculo()" />
         <br />
-        <p id="pcontato">E-mail:</p><input type="email" class="form-control" id="inputEmail3" name="email_contato">
+        <p class="pcontato">E-mail:</p><input type="email" class="form-control" aria-describedby="helpBlock" id="inputEmail3" name="email_contato">
         <br />
-        <p id="pcontato">Telefone: </p>
+        <p class="pcontato">Telefone: </p>
         <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" name="telefone_contato" maxlength="9">
         <br />
         <p id="pcontato">Assunto: </p> 
@@ -35,14 +29,14 @@ echo iniciaPagina();
         <option value="Outros">Outros</option>      
     </select>
     <br />
-    <p id="pcontato">Preferência para retorno do contato:</p>
+    <p class="pcontato">Preferência para retorno do contato:</p>
     <br /><br>
     
     <input  type="checkbox" name="preferencia[]" value="telefone"><a id="checkbox">Telefone</a>
     <input id="checkbox" type="checkbox" name="preferencia[]" value="e-mail"><a id="checkbox">E-mail</a>
     
     <br /><br>
-    <p id="pcontato">Mensagem: <br /></p>
+    <p class="pcontato">Mensagem: <br /></p>
     <textarea class="form-control" rows="3" name="mensagem" ></textarea>
     <br />
     <br/>
