@@ -6,8 +6,16 @@ require_once('conexao.php');
 <html lang="en">
 
    <?php 
-        echo iniciaPagina();
-        echo criaMenu();
+         echo iniciaPagina();
+            if (isset($_SESSION)){
+             echo criaMenu();
+        }
+        else {
+            echo criaMenu2();
+            echo "<p style= 'color :white;'>Olá usuario</p>";
+            }
+        
+        echo criaCabecalho();
     ?>
 
     <!-- Page Content -->
@@ -18,13 +26,10 @@ require_once('conexao.php');
             <div class="col-md-3">
                 <p class="lead"><strong>Categorias</strong></p>
                 <div class="list-group">
-                    <a href="categoria.php" class="list-group-item">Camisetas</a>
-                    <a href="#" class="list-group-item">Livros</a>
-                    <a href="#" class="list-group-item">Acessórios</a>
-					<a href="#" class="list-group-item">Colecionáveis</a>
-					
-					<a href="#" class="list-group-item">Decoração</a>
-					
+                    <a style="background:rgba(12, 12, 12, 0.7);color: white;border: 1px solid rgba(12, 12, 12, 0.7);" href="categoria1.php" class="list-group-item">Camisetas</a>
+                    <a style="background:rgba(214, 30, 30, 0.7);color: white;border: 1px solid rgba(214, 30, 30, 0.7);" href="categoria2.php" class="list-group-item">Cachecois</a>
+                    <a style="background:rgba(33, 115, 35, 0.75);color: white;border: 1px solid rgba(33, 115, 35, 0.75);" href="categoria3.php" class="list-group-item">Mochilas & Bolsas</a>
+	
                 </div>
             </div>
 

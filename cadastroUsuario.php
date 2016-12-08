@@ -7,10 +7,16 @@ require_once('conexao.php');
 
    <?php 
         echo iniciaPagina();
-        echo criaMenu();
+         if (isset($_SESSION)){
+             echo criaMenu();
+        }
+        else {
+            echo criaMenu2();
+            echo "<p style= 'color :white;'>Olá usuario</p>";
+            }
     ?>
     <div class="container ">
-        <h1>Cadastro de Usuário</h1>
+        <h1 id="pcadastroUser">Cadastro de Usuário</h1>
         <div class="form-b">
             <form action="cadastra_usuario.php" role="form" method="POST" class="login-form" >
                      <div class="col-ms-4">

@@ -6,14 +6,20 @@ require_once('conexao.php');
 <html lang="en">
 
    <?php 
-        echo iniciaPagina();
-        echo criaMenu();
+         echo iniciaPagina();
+                   if (isset($_SESSION)){
+             echo criaMenu();
+        }
+        else {
+            echo criaMenu2();
+            echo "<p style= 'color :white;'>Olá usuario</p>";
+            }
     ?>
 
     <!-- Page Content -->
     <div class="container">
 			<div class="links">
-				<p>Conheça mais sobre as ultimas novidades do mundo da tecnologia:</p>
+				<p id="paglink">Conheça mais sobre as ultimas novidades do mundo da tecnologia:</p>
 				
                 <?php
                 $size = sizeof($link);

@@ -1,6 +1,9 @@
 <?php 
 require_once('funcoes.php');
 require_once('conexao.php');
+if (!isset($_SESSION)) {
+    echo"<script language='javascript' type='text/javascript'>alert('acesso Negado');window.location.href='index.php';</script>";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +13,7 @@ require_once('conexao.php');
     ?>
     
     <div class="container">
-        <h1>Cadastro de Produto</h1>
+        <h1 id="pcadastroUser">Cadastro de Produto</h1>
         <form action="cadastra_produto.php" method="POST" enctype="multipart/form-data">
             <div class="col-ms-4">
 

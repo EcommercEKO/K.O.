@@ -2,7 +2,9 @@
 
 require_once('funcoes.php');
 require_once('conexao.php');
-
+if (!isset($_SESSION)) {
+    echo"<script language='javascript' type='text/javascript'>alert('acesso Negado');window.location.href='index.php';</script>";
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,9 +13,17 @@ require_once('conexao.php');
 
 	echo iniciaPagina();
 	echo criaCabecalho();
-	echo criaMenu();
+
+              if (isset($_SESSION)){
+             echo criaMenu();
+        }
+        else {
+            echo criaMenu2();
+            echo "<p  style= 'color :white;'>Olá usuario</p>";
+            }
+
 		?>
-		<div class="content">
+		<div class="content5">
 		<?php
 		echo "Usuário cadatrado com sucesso!<br>";
 

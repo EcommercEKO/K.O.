@@ -5,7 +5,8 @@
 	$link = array
 	  (
 	  array("http://www.tecmundo.com.br/","_imagem/tecmundo.png"),
-	  array("http://www.techtudo.com.br/","_imagem/TechTudo.png")
+	  array("http://www.techtudo.com.br/","_imagem/TechTudo.png"),
+    array("http://olhardigital.uol.com.br/","_imagem/olhar_digital.png")
 	  );
 
 
@@ -50,8 +51,8 @@
 
 	function criaCabecalho () {
 		return '
-		<div class="header"><!--REGIAO 1-->
-		'.DATE	
+		<div style="color:white; margin-left:90%; z-index:9999;">
+        '.DATE
 		.'</div>';
 	}
 
@@ -72,10 +73,6 @@
 
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-
-                    <li>
-                        <a href="usuario.html"></a>
-                    </li>
                   <div class="search-bar">
                         <input type="text" required></input>
                         <div class="search-icon"></div>
@@ -123,6 +120,61 @@
     </nav>';
 	}
 
+    function criaMenu2 () {
+        return 
+        '<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <div class="search-bar">
+                        <input type="text"  required></input>
+                        <div class="search-icon"></div>
+                  </div>
+                  <div>
+                      <div class="user">
+                         <a href="login.php"><img src="assets\ico\8.png"</a>
+                      </div>
+                       <div class="car">
+                          <img src="assets\ico\car.png">
+                      </div>
+                       <div class="ko"> 
+                       <a href="index.php"><img src="assets\ico\ko-LOGO.png"></a></div>
+                   </div>
+                </ul>
+            </div>
+           
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="produto.php">Produto</a>
+                    </li>
+                    <li>
+                        <a href="contato.php">Contato</a>
+                    </li>
+                     <li>
+                        <a href="links.php">Links de Interesse</a>
+                    </li>
+                     <li>
+                        <a href="sobre.php">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>';
+    }
+    
 	function finalizaPagina () {
 		return
 		'<div class="container">
@@ -131,7 +183,7 @@
          <footer>
             <div class="row2">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p id="footer">Copyright &copy; Ecommerce 2016</p>
                 </div>
             </div>
         </footer>

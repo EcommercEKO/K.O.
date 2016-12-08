@@ -1,13 +1,20 @@
 <?php 
 require_once('funcoes.php');
 require_once('conexao.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
    <?php 
-        echo iniciaPagina();
-        echo criaMenu();
+       echo iniciaPagina();
+      if (isset($_SESSION)){
+             echo criaMenu();
+        }
+        else {
+            echo criaMenu2();
+            echo "<p style='color :white;'>Olá usuario</p>";
+            }
     ?>
 
     <!-- Top content -->
@@ -31,22 +38,25 @@ require_once('conexao.php');
                         		<div class="form-top-left">
                         			<h3>Login</h3>
                             		<p>Entre com o seu nome de Usuário e Senha:</p>
+
+                                    <a id="login-cadastro" href="cadastroUsuario.php">Ainda não é cadastrado? Cadastre-se agora!</a>
                         		</div>
                         		<div class="form-top-right">
                         			<i class="fa fa-lock"></i>
                         		</div>
                             </div>
                             <div class="form-bottom">
-			                    <form role="form" action="" method="post" class="login-form">
+			                    <form role="form" action="login2.php" method="post" class="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">Nome de Usuário</label>
-			                        	<input type="text" name="nome" placeholder="Nome de Usuário" class="form-username form-control" id="form-username">
+			                        	<input type="text" name="nome" placeholder="Nome de Usuário" name="login" id="login"  class="form-username form-control" 
+                                        >
 			                        </div>
 			                        <div class="form-group">
 			                        	<label class="sr-only" for="form-password">Senha</label>
 			                        	<input type="password" name="nome" placeholder="Senha" class="form-password form-control" id="form-password">
 			                        </div>
-			                        <button type="submit" class="btn">Entrar!</button>
+			                        <button type="submit" class="btn" name="entrar" id="entrar">Entrar!</button>
 			                    </form>
 		                    </div>
                         </div>
