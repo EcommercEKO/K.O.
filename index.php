@@ -7,7 +7,15 @@ require_once('conexao.php');
 
    <?php 
         echo iniciaPagina();
-        echo criaMenu();
+            if (isset($_SESSION)){
+             echo criaMenu();
+        }
+        else {
+            echo criaMenu2();
+            echo "<p style= 'color :white;'>Olá usuario</p>";
+            }
+        
+        echo criaCabecalho();
     ?>
 
     <!-- Page Content -->
@@ -132,8 +140,8 @@ require_once('conexao.php');
                         <div class="thumbnail">
                            <img src="<?php echo imagem(5)?>" alt="">
                             <div class="caption1">
-                                <h4 class="pull-right1">R$91,99</h4>
-                                <h4><a href="#">Metal Earth Klingon Vorcha (StarTrek)</a>
+                                <h4 class="pull-right1">R$<?php echo preco(5)?></h4>
+                                <h4><a href="#"><?php echo nome(5)?></a>
                                 </h4>
                                 
                             </div>

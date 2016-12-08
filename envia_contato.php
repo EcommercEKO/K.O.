@@ -10,6 +10,10 @@
 // }
 require_once('funcoes.php');
 require_once('conexao.php');
+if (!isset($_SESSION)) {
+    echo"<script language='javascript' type='text/javascript'>alert('acesso Negado');window.location.href='index.php';</script>";
+
+}
 
 ?>
 <!DOCTYPE html>
