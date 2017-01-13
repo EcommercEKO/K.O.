@@ -49,12 +49,11 @@ require_once('conexao.php');
 			                    <form role="form" action="login2.php" method="post" class="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">Nome de Usuário</label>
-			                        	<input type="text" name="nome" placeholder="Nome de Usuário" name="login" id="login"  class="form-username form-control" 
-                                        >
+			                        	<input type="text"  placeholder="Nome de Usuário" name="login" id="login"  class="form-username form-control">
 			                        </div>
 			                        <div class="form-group">
 			                        	<label class="sr-only" for="form-password">Senha</label>
-			                        	<input type="password" name="nome" placeholder="Senha" class="form-password form-control" id="form-password">
+			                        	<input type="password" name="senha" placeholder="Senha" class="form-password form-control" id="senha">
 			                        </div>
 			                        <button type="submit" class="btn" name="entrar" id="entrar">Entrar!</button>
 			                    </form>

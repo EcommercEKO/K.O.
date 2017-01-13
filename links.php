@@ -5,22 +5,19 @@ require_once('conexao.php');
 <!DOCTYPE html>
 <html lang="en">
 
-   <?php 
-<<<<<<< HEAD
-        echo iniciaPagina();
-            if (isset($_SESSION)){
-            echo criaMenu();
-=======
+    <?php 
          echo iniciaPagina();
-                   if (isset($_SESSION)){
+            if (isset($_SESSION)){
              echo criaMenu();
->>>>>>> 21ff125e080dcf5b911b9300b4ae0603d5a89787
         }
         else {
             echo criaMenu2();
             echo "<p style= 'color :white;'>Olá usuario</p>";
             }
+        
+        echo criaCabecalho();
     ?>
+
 
     <!-- Page Content -->
     <div class="container">

@@ -6,15 +6,18 @@ require_once('conexao.php');
 <html lang="en">
 
    <?php 
-        echo iniciaPagina();
-                    if (isset($_SESSION)){
+         echo iniciaPagina();
+            if (isset($_SESSION)){
              echo criaMenu();
         }
         else {
             echo criaMenu2();
             echo "<p style= 'color :white;'>Olá usuario</p>";
             }
+        
+        echo criaCabecalho();
     ?>
+
 
 <?php
 

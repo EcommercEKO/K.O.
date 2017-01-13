@@ -5,8 +5,8 @@ require_once('conexao.php');
 <!DOCTYPE html>
 <html lang="en">
 
-<?php 
-echo iniciaPagina();
+   <?php 
+         echo iniciaPagina();
             if (isset($_SESSION)){
              echo criaMenu();
         }
@@ -14,7 +14,10 @@ echo iniciaPagina();
             echo criaMenu2();
             echo "<p style= 'color :white;'>Olá usuario</p>";
             }
-?>
+        
+        echo criaCabecalho();
+    ?>
+
 <div class="container">
     <h3 id="titulo">Contato</h3>
     <form action="envia_contato.php" method="post" id = "campo" enctype="multipart/form-data">

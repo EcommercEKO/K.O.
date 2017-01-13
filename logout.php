@@ -1,9 +1,6 @@
 <?php 
+@session_destroy("user");
+   echo"<script language='javascript' type='text/javascript'>alert('Sessão terminada');window.location.href='index.php';</script>";
 
-if(isset($_SESSION));{
 
-
-	@session_destroy();};
-
-echo "<script language='javascript' type='text/javascript'>window.location.href='index.php';</script>";
 ?>

@@ -113,7 +113,7 @@
                         <a href="sobre.php">Sobre</a>
                     </li>
                     <li>
-                        <a href="logout.php" style = "color:red;">sair</a>
+                        <a href="logout.php" style="color:red;">Sair</a>
                     </li>
                 </ul>
             </div>
@@ -170,7 +170,6 @@
                      <li>
                         <a href="sobre.php">Sobre</a>
                     </li>
-                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
